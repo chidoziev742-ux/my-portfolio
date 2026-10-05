@@ -1,343 +1,781 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Chidozie victor| Front-End Developer (2025)</title>
-    <meta name="description" content="Professional portfolio of Alex Carter, Front-End Developer specializing in HTML, CSS, and JavaScript">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Chidozie Victor | Computer Science Student & Software Developer
+    </title>
+    <meta
+      name="description"
+      content="Portfolio of Chidozie Victor — Computer Science student and software developer building practical applications, exploring emerging technologies and learning through real projects."
+    />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Chidozie Victor | CS Student & Software Developer"
+    />
+    <meta
+      property="og:description"
+      content="I build practical software projects, explore emerging technologies, and use AI-assisted development to turn ideas into working solutions."
+    />
+    <meta property="og:type" content="website" />
+
     <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <nav>
-                <a href="#" class="logo">Chidozie<span>victor 👦🏾</span></a>
-                
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                
-                <div class="theme-toggle">
-                    <i class="fas fa-moon"></i>
-                </div>
-                
-                <div class="hamburger">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
-        </div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--  NAVIGATION -->
+    <header id="navbar">
+      <div class="container nav-inner">
+        <a href="#home" class="logo" aria-label="Chidozie Victor — home">
+          Chidozie<span>Victor</span>
+        </a>
+
+        <nav role="navigation" aria-label="Primary navigation">
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <a
+          href="https://github.com/chidoziev742-ux"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-ghost nav-github"
+          aria-label="GitHub profile"
+        >
+          <i class="fab fa-github" aria-hidden="true"></i> GitHub
+        </a>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle mobile menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </header>
 
-    <!-- Hero Section -->
+    <!--  HERO  -->
     <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Hi, I'm <span>Chidozie  victor 👊</span><br>Front-End Developer</h1>
-                    <p>I build exceptional digital experiences with clean, efficient code using HTML, CSS, and JavaScript. Let's create something amazing together.</p>
-                    <div class="btn-group">
-                        <a href="#projects" class="btn">View My Work 📖</a>
-                        <a href="#contact" class="btn btn-outline">Contact Me 📞</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="images/wmremove-transformed.png" alt="Developer working">
-                </div>
-            </div>
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <p class="status-badge">
+            <span class="status-dot" aria-hidden="true"></span>
+            BUILDING &bull; LEARNING &bull; EXPERIMENTING
+          </p>
+
+          <h1>
+            Hi, I'm <span class="accent">Chidozie Victor</span> <br />
+            Computer Science Student<br />&amp; Software Developer
+          </h1>
+
+          <p class="hero-sub">
+            I build practical software projects, explore emerging technologies,
+            and use AI-assisted development to turn ideas into working
+            solutions.
+          </p>
+
+          <div class="btn-group">
+            <a href="#projects" class="btn btn-primary">Explore My Projects</a>
+            <a
+              href="https://github.com/chidoziev742-ux"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-outline"
+            >
+              GitHub <span aria-hidden="true">↗</span>
+            </a>
+          </div>
         </div>
+
+        <div class="hero-image reveal reveal-right">
+          <div class="hero-img-wrap">
+            <img
+              src="images/Wallpaper - Samurai Developer Desktop.jpg"
+              alt="Chidozie Victor"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me 👦🏾</h2>
-            
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Who I Am </h3>
-                    <p>Hello! I'm Chidozie Victor, a highly motivated and enthusiastic beginner front-end developer based in Owerri, Imo State, Nigeria. </p>
-                       <P> I'm passionate about crafting engaging and user-friendly web experiences.</P>
-                       <p> Eager to learn and grow in the world of web development, I'm currently building my skills in HTML, CSS, and JavaScript and excited to contribute to meaningful projects.</p>
-
-
-                </div>
-                
-                <div class="skills">
-                    <h3>My Skills 🧰</h3>
-                    
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>HTML5</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="80"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>CSS3</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="75"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>JavaScript</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="50"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Responsive Design</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="70"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>UI/UX Principles</span>
-                            <span>45%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="45"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- ABOUT -->
+    <section id="about" class="about section-pad">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Who I Am</p>
+          <h2 class="section-title">About Me</h2>
         </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a Computer Science student based in Owerri, Imo State, Nigeria
+              with a passion for building practical software and understanding
+              how technology works from the ground up.
+            </p>
+            <p>
+              My interest in software development goes beyond coursework — I
+              learn by actually building things. Whether it's a budgeting tool
+              for students, an anime discovery / streaming app, or experimenting
+              with AI tools in my workflow, I'm constantly looking for ways to
+              apply what I'm learning to real problems.
+            </p>
+            <p>
+              I work primarily with HTML, CSS and JavaScript, React and I'm
+              comfortable using APIs, browser storage, Firebase and
+              backend-as-a-service tools to build complete, functioning
+              applications.
+            </p>
+
+            <a
+              href="https://github.com/chidoziev742-ux"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-outline mt-2"
+            >
+              <i class="fab fa-github" aria-hidden="true"></i> View My GitHub
+            </a>
+          </div>
+
+          <div class="about-cards reveal reveal-right">
+            <div class="info-card">
+              <div class="info-card-icon">
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h4>Location</h4>
+                <p>Owerri, Imo State, Nigeria</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-card-icon">
+                <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h4>Status</h4>
+                <p>Computer Science Student</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-card-icon">
+                <i class="fas fa-code" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h4>Focus</h4>
+                <p>Web Apps &amp; Practical Software</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-card-icon">
+                <i class="fas fa-robot" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h4>Approach</h4>
+                <p>AI-Assisted, Human-Driven Development</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">My Projects 💻</h2>
-            
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/download.jpg" alt="E-commerce Website">
-                    </div>
-                    <div class="project-info">
-                        <h3>A budget calculator 🧮 </h3>
-                        <p>A simple budget calculator with dark mode toggle and responsive Design</p>
-                        <div class="project-tags">
-                            <span class="project-tag">HTML5</span>
-                            <span class="project-tag">CSS</span>
-                            <span class="project-tag">JavaScript</span>
-                            <span class="project-tag">Responsive</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://sweet-queijadas-15bfac.netlify.app/"><i class="fas fa-external-link-alt"></i> Live Demo 🔗</a>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Weather App">
-                    </div>
-                    <div class="project-info">
-                        <h3>Weather Forecast App 🌎</h3>
-                        <p>A weather application that displays current conditions  using a weather API, fully responsive.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">JavaScript</span>
-                            <span class="project-tag">API Integration</span>
-                            <span class="project-tag">CSS </span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://spiffy-frangollo-8991a0.netlify.app/"><i class="fas fa-external-link-alt"></i> Live Demo 🔗</a>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/Gemini_Generated_Image_x910ttx910ttx910.png" alt="salon">
-                    </div>
-                    <div class="project-info">
-                        <h3>a salon site 💇🏾‍♂️ </h3>
-                        <p>a simple salon site , with darkmode and  responsive.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">JavaScript</span>
-                            <span class="project-tag">HTML5
-
-                    </span>
-                            <span class="project-tag">CSS3</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://deft-marshmallow-78ebba.netlify.app/"><i class="fas fa-external-link-alt"></i> Live Demo 🔗</a>
-                        
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- HOW I BUILD  -->
+    <section id="how-i-build" class="how-i-build section-pad">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">My Workflow</p>
+          <h2 class="section-title">How I Build</h2>
         </div>
+
+        <div class="process-grid reveal">
+          <div class="process-step">
+            <div class="process-num">01</div>
+            <div class="process-icon">
+              <i class="fas fa-lightbulb" aria-hidden="true"></i>
+            </div>
+            <h3>Idea</h3>
+            <p>
+              Start with a problem worth solving or something interesting to
+              build.
+            </p>
+          </div>
+          <div class="process-arrow" aria-hidden="true">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+
+          <div class="process-step">
+            <div class="process-num">02</div>
+            <div class="process-icon">
+              <i class="fas fa-search" aria-hidden="true"></i>
+            </div>
+            <h3>Research</h3>
+            <p>
+              Understand the domain, explore existing solutions and gather
+              requirements.
+            </p>
+          </div>
+          <div class="process-arrow" aria-hidden="true">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+
+          <div class="process-step">
+            <div class="process-num">03</div>
+            <div class="process-icon">
+              <i class="fas fa-robot" aria-hidden="true"></i>
+            </div>
+            <h3>AI Assistance</h3>
+            <p>
+              Use AI to research concepts, explore approaches, debug problems
+              and improve ideas.
+            </p>
+          </div>
+          <div class="process-arrow" aria-hidden="true">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+
+          <div class="process-step">
+            <div class="process-num">04</div>
+            <div class="process-icon">
+              <i class="fas fa-hammer" aria-hidden="true"></i>
+            </div>
+            <h3>Build</h3>
+            <p>
+              Write the actual code, structure the UI and connect the logic.
+            </p>
+          </div>
+          <div class="process-arrow" aria-hidden="true">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+
+          <div class="process-step">
+            <div class="process-num">05</div>
+            <div class="process-icon">
+              <i class="fas fa-flask" aria-hidden="true"></i>
+            </div>
+            <h3>Test</h3>
+            <p>
+              Test across devices, fix bugs and make sure it actually works.
+            </p>
+          </div>
+          <div class="process-arrow" aria-hidden="true">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+
+          <div class="process-step">
+            <div class="process-num">06</div>
+            <div class="process-icon">
+              <i class="fas fa-sync-alt" aria-hidden="true"></i>
+            </div>
+            <h3>Improve</h3>
+            <p>Refine, optimise and keep learning from the process.</p>
+          </div>
+        </div>
+
+        <div class="ai-note reveal">
+          <div class="ai-note-icon">
+            <i class="fas fa-info-circle" aria-hidden="true"></i>
+          </div>
+          <p>
+            AI is part of my development workflow — helping me research,
+            understand unfamiliar concepts, explore solutions, debug problems
+            and improve ideas while I continue learning the underlying
+            technologies.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch 🤙🏾</h2>
-            
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Let's Talk About Your Project</h3>
-                    <p>I'm currently available for freelance work or full-time positions. If you have a project that you want to get started or think you need my help with something, then get in touch.</p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Location</h4>
-                                <p>Owerri , imostate Nigeria</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Email</h4>
-                                <p>chidoziev742@gmail.com</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Phone</h4>
-                                <p>+1234-913-529-1223</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form">
-                    <form id="contactForm">
-  <div class="form-group">
-    <label for="name">Your Name</label>
-    <input type="text" id="name" name="user_name" class="form-control" required>
-  </div>
-  
-  <div class="form-group">
-    <label for="email">Your Email</label>
-    <input type="email" id="email" name="user_email" class="form-control" required>
-  </div>
-  
-  <div class="form-group">
-    <label for="subject">Subject</label>
-    <input type="text" id="subject" name="subject" class="form-control" required>
-  </div>
-  
-  <div class="form-group">
-    <label for="message">Your Message</label>
-    <textarea id="message" name="message" class="form-control" required></textarea>
-  </div>
-  
-  <button type="submit" class="btn">Send Message ✉</button>
-</form>
-                        </div>
-                        
-                        
-                    </form>
-                </div>
-            </div>
+    <!-- FEATURED PROJECTS  -->
+    <section id="projects" class="projects section-pad">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Selected Work</p>
+          <h2 class="section-title">Featured Projects</h2>
         </div>
+
+        <!-- Featured: Budget Tracker -->
+        <div class="featured-card reveal">
+          <div class="featured-image">
+            <img
+              src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80"
+              alt="Student Budget Tracker application screenshot"
+            />
+          </div>
+          <div class="featured-info">
+            <p class="project-num">01 / FEATURED</p>
+            <h3>Student Budget Tracker</h3>
+            <p>
+              A student-focused budgeting application designed to help students
+              manage expenses, budgets and savings goals. Tracks income and
+              spending, categorises transactions it stores data in postgress sql
+              database in supabase.
+            </p>
+            <div class="tag-group">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Supabase</span>
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://student-budget-app-20fe9.web.app/"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-primary"
+              >
+                <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live
+                Demo ↗
+              </a>
+              <a
+                href="https://github.com/chidozievictor/budget-tracker"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-outline"
+              >
+                <i class="fab fa-github" aria-hidden="true"></i> GitHub ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured: Anime Discovery App -->
+        <div class="featured-card featured-card--reverse reveal">
+          <div class="featured-image">
+            <img
+              src="https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=900&q=80"
+              alt="Anime Discovery App screenshot"
+            />
+          </div>
+          <div class="featured-info">
+            <p class="project-num">02 / FEATURED</p>
+            <h3>Anime Discovery App</h3>
+            <p>
+              A modern anime discovery application for browsing, searching and
+              exploring anime content. Powered by the Jikan API — features
+              search, genre filters and episode listings in a fully responsive
+              interface.
+            </p>
+            <div class="tag-group">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Jikan API</span>
+              <span class="tag">React</span>
+              <!-- <span class="tag">HTML5</span> -->
+              <span class="tag">CSS3</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="http://demmovies.netlify.app/"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-primary"
+              >
+                <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live
+                Demo ↗
+              </a>
+              <a
+                href="https://github.com/chidozievictor/anime-site"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-outline"
+              >
+                <i class="fab fa-github" aria-hidden="true"></i> GitHub ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── More Projects ── -->
+        <div class="section-header reveal" style="margin-top: 80px">
+          <p class="section-label">More Work</p>
+          <h2 class="section-title" style="font-size: 1.8rem">More Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Weather App -->
+          <div class="project-card reveal">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=700&q=80"
+                alt="Weather Forecast App"
+              />
+            </div>
+            <div class="project-info">
+              <p class="project-num">03</p>
+              <h3>Weather Forecast App</h3>
+              <p>
+                A weather application that displays current conditions using a
+                live weather API. Fully responsive.
+              </p>
+              <div class="tag-group">
+                <span class="tag">JavaScript</span>
+                <span class="tag">API Integration</span>
+                <span class="tag">CSS3</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://spiffy-frangollo-8991a0.netlify.app/"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-ghost btn-sm"
+                >
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                  Live Demo ↗
+                </a>
+                <a
+                  href="https://github.com/chidozievictor/weather-app"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-ghost btn-sm"
+                >
+                  <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Digital Business Card / Salon Site -->
+          <div class="project-card reveal">
+            <div class="project-image">
+              <img
+                src="images/Gemini_Generated_Image_x910ttx910ttx910.png"
+                alt="Salon Website"
+              />
+            </div>
+            <div class="project-info">
+              <p class="project-num">04</p>
+              <h3>Salon Website</h3>
+              <p>
+                A clean, responsive salon website featuring dark mode and a
+                modern layout. Built with vanilla HTML, CSS &amp; JS.
+              </p>
+              <div class="tag-group">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://deft-marshmallow-78ebba.netlify.app/"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-ghost btn-sm"
+                >
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                  Live Demo ↗
+                </a>
+                <a
+                  href="https://github.com/chidozievictor/salon-site"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-ghost btn-sm"
+                >
+                  <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
+    <!--  SKILLS  -->
+    <section id="skills" class="skills-section section-pad">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Technologies</p>
+          <h2 class="section-title">Skills &amp; Tools</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3>
+              <i class="fas fa-laptop-code" aria-hidden="true"></i> Frontend
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Responsive Design</span>
+              <span class="skill-tag">UI/UX Principles</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3>
+              <i class="fas fa-cubes" aria-hidden="true"></i> Application
+              Development
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">API Integration</span>
+              <span class="skill-tag">LocalStorage</span>
+              <span class="skill-tag">Firebase</span>
+              <span class="skill-tag">PWA</span>
+              <span class="skill-tag">Supabase</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3><i class="fas fa-tools" aria-hidden="true"></i> Tools</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Netlify</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3>
+              <i class="fas fa-robot" aria-hidden="true"></i> AI-Assisted
+              Development
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">AI Research</span>
+              <span class="skill-tag">AI Coding Assistance</span>
+              <span class="skill-tag">Prompt Engineering</span>
+              <span class="skill-tag">AI Debugging</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  GITHUB CTA  -->
+    <section class="github-cta section-pad">
+      <div class="container reveal">
+        <div class="github-cta-inner">
+          <div class="github-cta-icon">
+            <i class="fab fa-github" aria-hidden="true"></i>
+          </div>
+          <h2>More Code. More Experiments.</h2>
+          <p>
+            Not everything I build makes it into my featured projects. Explore
+            more of my work and experiments on GitHub.
+          </p>
+          <a
+            href="https://github.com/chidoziev742-ux"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary"
+          >
+            Explore My GitHub ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--  CONTACT  -->
+    <section id="contact" class="contact section-pad">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Get In Touch</p>
+          <h2 class="section-title">Let's Connect</h2>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact info -->
+          <div class="contact-info reveal">
+            <p class="contact-intro">
+              Interested in my work, have a project idea, or just want to
+              connect?
+            </p>
+
+            <div class="contact-items">
+              <a href="mailto:chidoziev742@gmail.com" class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h4>Email</h4>
+                  <span>chidoziev742@gmail.com</span>
+                </div>
+              </a>
+
+              <a
+                href="https://github.com/chidoziev742-ux"
+                target="_blank"
+                rel="noopener"
+                class="contact-item"
+              >
+                <div class="contact-icon">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h4>GitHub</h4>
+                  <span>github.com/chidoziev742-ux</span>
+                </div>
+              </a>
+
+              <div class="contact-item contact-item--location">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h4>Location</h4>
+                  <span>Owerri, Imo State, Nigeria</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact form -->
+          <div class="contact-form reveal reveal-right">
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="user_name"
+                  class="form-control"
+                  placeholder="victor"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="user_email"
+                  class="form-control"
+                  placeholder="victor@example.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="form-control"
+                  placeholder="Project idea, collaboration…"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-control"
+                  placeholder="Tell me more…"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                Send Message
+                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER  -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <h3>Chidozie victor 👦🏾</h3>
-                    <p>Front-end developer specializing in building exceptional digital experiences with HTML, CSS, and JavaScript.</p>
-                    <div class="social-links">
-                       <a href="https://wa.me/+2349135291223" class="social-link" target="_blank">
-  <i class="fab fa-whatsapp"></i>
-</a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-codepen"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Quick Links</h3>
-                    <div class="footer-links">
-                        <a href="#home">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#contact">Contact</a>
-                    </div>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Services</h3>
-                    <div class="footer-links">
-                        <a href="#">Web Development</a>
-                        <a href="#">Responsive Design</a>
-                        <a href="#">UI/UX Design</a>
-                        <a href="#">Website Maintenance</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Chidozie victor. All rights reserved.</p>
-            </div>
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <a href="#home" class="logo footer-logo"
+            >Chidozie<span>Victor</span></a
+          >
+          <p>Built with HTML, CSS &amp; JavaScript ,<br />AI-assisted.</p>
         </div>
+
+        <div class="footer-links-col">
+          <h4>Navigation</h4>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-social-col">
+          <h4>Connect</h4>
+          <a href="mailto:chidoziev742@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope" aria-hidden="true"></i> Email
+          </a>
+          <a
+            href="https://github.com/chidoziev742-ux"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github" aria-hidden="true"></i> GitHub
+          </a>
+          <a
+            href="https://wa.me/+2349135291223"
+            target="_blank"
+            rel="noopener"
+            aria-label="WhatsApp"
+          >
+            <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© <span id="year"></span> Chidozie Victor. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <div class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </div>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script>
-  // EmailJS with your User ID
-  (function() {
-    emailjs.init('7VrEpQR2MPSnskGUl'); //  public key or Api key 
-  })();
-</script>
-    <!-- JavaScript file is below⬇ -->
-    <script src="javascript\index,js"></script>
-</body>
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("7VrEpQR2MPSnskGUl");
+      })();
+    </script>
+
+    <!-- Main JS -->
+    <script src="javascript/index,js"></script>
+  </body>
 </html>
